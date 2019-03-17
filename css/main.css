@@ -1,0 +1,614 @@
+
+*{
+    box-sizing: border-box;
+/*    border: 1px solid red;*/
+}
+
+@font-face {
+font-family: 'Geometria';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria'), url('Geometria.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Italic'), url('Geometria-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-Thin';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Thin'), url('Geometria-Thin.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-ThinItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-ThinItalic'), url('Geometria-ThinItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-ExtraLight';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-ExtraLight'), url('Geometria-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-ExtraLightItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-ExtraLightItalic'), url('Geometria-ExtraLightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-Light';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Light'), url('Geometria-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-LightItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-LightItalic'), url('Geometria-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Medium'), url('Geometria-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-MediumItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-MediumItalic'), url('Geometria-MediumItalic.woff') format('woff');
+}
+@font-face {
+font-family: 'Geometria Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Regular'), url('Geometria-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Geometria-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Bold'), url('Geometria-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-BoldItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-BoldItalic'), url('Geometria-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-ExtraBold';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-ExtraBold'), url('Geometria-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-ExtraBoldItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-ExtraBoldItalic'), url('Geometria-ExtraBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-Heavy'), url('Geometria-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Geometria-HeavyItalic';
+font-style: normal;
+font-weight: normal;
+src: local('Geometria-HeavyItalic'), url('Geometria-HeavyItalic.woff') format('woff');
+}
+@font-face {
+font-family: 'PT_Serif-Web-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('PT_Serif-Web-Regular'), url('GPT_Serif-Web-Regular.ttf') format('ttf');
+}
+@font-face {
+font-family: 'PT_Serif-Web-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('PT_Serif-Web-Bold'), url('PT_Serif-Web-Bold.ttf') format('ttf');
+}
+p,h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Geometria'; 
+}
+.wraper {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    left: 0px;
+    
+}
+.main_banner {
+    height: 728px;
+    background: #E5E5E5 url('../img/fonhead.png') no-repeat right top;
+    background-size: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    background: #264DB2;
+    position: fixed;
+    top: 0;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 99;
+}
+.img_logo{
+    margin-left: 135px;
+    flex-grow: 1;
+}
+.nav {
+    display:flex;
+    justify-content: space-around;
+    margin-right: 135px;
+    flex-grow: 2;
+
+}
+.nav ul{
+    display: flex;
+    
+}
+.main_menu li{
+    padding: 27px 34px 27px 0;
+}
+.menu_item a{
+    color: #ffffff;
+    font-size: 12px;
+
+}
+.offer_title {
+    padding: 205px 0 0 224px;
+}
+.offer_title h1{
+    font-family:Geometria-Bold;
+    font-size: 24px;
+    line-height: normal;
+    text-transform: uppercase;
+
+color: #000000;    
+}
+.offer_text_tipe{
+    font-size: 14px;
+    text-transform: uppercase;
+
+color: #8D8D8D;
+}
+.offer_text_info {
+    font-family:Geometria-Bold; 
+    padding: 32px 0 64px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+
+color: #8D8D8D;
+
+}
+.btn-active{
+    margin-top: 30px;
+    padding: 12px 37px 12px  37px;
+    background: #264DB2;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 9px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.btn-info{
+    padding: 12px 37px 12px  37px;
+    color: #264DB2;
+    border: 1px solid #264DB2;
+    background: #ffffff;
+    font-family: Geometria;
+    font-size: 9px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.offer_info{
+    max-height: 329px;
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 146px 0 224px;
+}
+.social_ {
+    margin: 0px 0px 99px 0px;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items:flex-end;
+
+color: #8D8D8D;
+}
+.social_ p{
+    padding: 0 2px 0 2px;
+}
+.info_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    text-align: center;
+    
+}
+.special_offer {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 110px;
+    font-family: Geometria;
+    font-size: 9px;
+    line-height: normal;
+    text-transform: capitalize;
+    background: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.special_offer h1{
+    width: 100%;
+    padding: 15px 0px 0px 25px;
+    font-family: Geometria-Bold;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+.special_offer p{
+    width: 100%;
+    padding: 19px 0px 0px 25px;
+}
+.special_offer a{
+    width: 100%;
+    padding: 5px 0px 26px 25px;
+}
+.special_offer img{
+    padding: 0 0 0 5px;
+}
+.telephone_number{
+    padding: 23px 31px 30px 31px;
+    max-width: 200px;
+    max-height: 178px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background: #ffffff;
+}
+.telephone_number p{
+    padding: 14px 0px 0px 0px;
+    width: 100%;
+    font-family: Geometria;
+    font-size: 9px;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.telephone_number a{
+    padding:  44px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: Geometria-Bold;
+    font-size: 9px;
+    line-height: normal;
+    text-transform: uppercase;
+
+color: #264DB2;
+
+}
+.arrow_dawn{
+    position: absolute;
+    right: 50.5%;
+    top: 664px;
+    text-align: center;
+}
+.arrow_dawn p{
+    font-family: Geometria-Light;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    transform: rotate(-90deg);
+}
+.arrow_dawn img{
+    padding:16px 0px 0px 0px ;
+}
+.our_servises {
+    top:0;
+    max-width: 1440px;
+    width: 100%;
+    background: #264DB2;
+    
+}
+.our_servises_title h1{
+    padding: 101px 0 52px 0;
+    font-family: Geometria-Bold;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: #FFFFFF;
+}
+.our_servises_content{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 0 30.20% 0 16.32%;
+}
+.our_servises_content h1{
+    font-family: Geometria-Bold;
+    font-size: 48px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0px 0 0px 0; 
+}
+.our_servises_content p{
+    font-family: PT_Serif-Web-Regular;
+    font-size: 48px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: #FFFFFF;
+    text-transform: none;
+    font-size: 14px;
+    text-align: left;
+    margin: 20px 0 65px 0;
+    max-width: 170px;
+}
+.web{
+    width: 30%;
+}
+.ux{
+    width: 30%;
+    
+}
+.ux h1{
+    color: #000000;    
+}
+.ux p{
+    margin-bottom: 40px;
+    color: #000000;
+}
+.audit{
+    width: 30%;
+}
+.seo{
+    width: 30%;
+}
+.smm{
+    width: 30%;
+}
+.branding{
+    width: 30%;
+}
+.our_servises_qw{
+    text-align: center;
+    padding: 76px 0 77px 0;
+    font-family: Geometria-Bold;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.BgText {
+    max-width: 1440px;
+    margin: 105px 0 0 107px;
+    position: absolute;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+.BgText h1{
+    font-size: 230px;
+    font-family: Geometria-ExtraBold;;
+    line-height: 1;
+    text-transform: capitalize;
+
+    color: #7A98FF;
+
+    opacity: 0.03;
+    
+}
+.OUR{
+    width: 100%;
+    
+}
+.SER{
+}
+.VIC{
+
+}
+.ES{
+}
+.portfolio {
+    max-width: 1440px;
+ 
+    
+}
+.portfolio_bgtext{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin: 85px 0 0 25px;
+    flex-wrap: wrap;
+    line-height: 1;
+    z-index: -1;
+    
+    
+}
+.portfolio_bgtext h1{
+    text-align: left;
+    width: 100%;
+    font-size: 230px;
+    font-family: Geometria-ExtraBold;;
+    
+    text-transform: capitalize;
+
+    color: #FBFBFB;
+    opacity: 1.03;
+        
+}
+.portfolio_title{
+    width: 100%;
+    padding: 77px 0 24px 9%;
+}
+.portfolio_title h1{
+    font-family: Geometria-Bold;
+    font-size: 24px;
+    line-height: normal;
+    text-transform: uppercase;
+
+color: #000000;
+}
+.portfolio_elements{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 33px;
+    padding: 0 14% 0 9%;
+}
+
+.portfolio_elements img{
+    
+}
+.portfolio_text{
+    
+}
+.portfolio_text h2{
+    margin-top: 66px;
+    font-family: Geometria Regular;
+    font-size: 24px;
+    line-height: normal;
+    text-transform: capitalize;
+
+color: #000000;
+
+}
+.portfolio_text h1{
+    font-family: PT_Serif-Web-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+
+color: #8D8D8D;
+
+}
+.portfolio_text h3{
+    margin-top: 19px;
+    font-family: PT_Serif-Web-Bold;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: capitalize;
+
+color: #000000;
+}
+.portfolio_text p{
+    margin: 4px 0 43px 0;
+    font-family: PT_Serif-Web-Regular;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+
+color: #8D8D8D;
+}
+.portfolio_text a{
+    font-size: 12px;
+    line-height: normal;
+    text-transform: capitalize;
+
+color: #264DB2;
+}
+.more_jobs{
+    display: flex;
+    justify-content: center;
+}
+.more_jobs a{
+    text-align: center;
+    padding: 62px 5% 45px 0;
+    font-family: Geometria-Bold;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    
+color: #264DB2;    
+}
+.footer{
+    
+}
